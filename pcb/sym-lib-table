@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "kicad_tritiled-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/kicad_tritiled-eagle-import.kicad_sym")(options "")(descr ""))
+)
