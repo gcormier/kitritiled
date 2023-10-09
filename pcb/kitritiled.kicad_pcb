@@ -1099,7 +1099,7 @@
     (property "ki_keywords" "battery cell")
     (path "/04811445-f7d1-43d2-b257-3f3dd6241a1e")
     (attr smd)
-    (fp_text reference "BT1" (at 0 -6) (layer "B.SilkS")
+    (fp_text reference "BT1" (at 0 -6) (layer "B.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 3dc7434e-799e-4355-8d6b-7e34d5548d49)
     )
@@ -1236,6 +1236,12 @@
 
   (gr_circle (center 90 90) (end 101.4 90)
     (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 551d1718-071e-4fa6-8c55-7c0ae39d5846))
+  (gr_text "<<hash>>" (at 90 100) (layer "B.SilkS") (tstamp 1ec2f4e4-7f37-432c-bfbe-e675c59d88f6)
+    (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror))
+  )
+  (gr_text "kitritiled\nv1" (at 90 80.5) (layer "F.SilkS") (tstamp 4d9dabe9-e427-48c4-abdb-1d74306e8e12)
+    (effects (font (size 0.8 0.8) (thickness 0.12)))
+  )
 
   (segment (start 94.2625 94.275) (end 93.5 94.275) (width 0.2) (layer "F.Cu") (net 1) (tstamp 17ab88dc-44a2-40e9-aa3d-deb891e6f75b))
   (segment (start 89.902137 88.502137) (end 83.252137 88.502137) (width 0.2) (layer "F.Cu") (net 1) (tstamp 22aa1242-a7f7-4867-8d7e-f57b1f7c0d2b))
