@@ -69,7 +69,7 @@ outputs:
             vjustify: center
           text2:
             type: simple
-            text: Design created on {date} - <<hash>>
+            text: "{date} (<<hash>>)"
             anchor: mb
             voffset: -2.5
             hjustify: center
@@ -77,3 +77,4 @@ outputs:
           post:
             refillzones: true
             millradius: 1mm
+            origin: bl
