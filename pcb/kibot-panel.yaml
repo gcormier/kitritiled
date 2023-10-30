@@ -30,7 +30,7 @@ outputs:
         - layout:
             rows: 2
             cols: 3
-            space: 2mm
+            space: 5mm
           tabs:
             type: fixed
             width: 5mm
@@ -45,7 +45,7 @@ outputs:
           framing:
             type: frame
             width: 7mm
-            space: 4mm
+            space: 2mm
             fillet: 1mm
             mintotalheight: 70mm
             mintotalwidth: 70mm
