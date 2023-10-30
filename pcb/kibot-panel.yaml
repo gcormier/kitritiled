@@ -28,7 +28,7 @@ outputs:
       units: mm
       configs:
         - layout:
-            rows: 3
+            rows: 2
             cols: 3
             space: 2mm
           tabs:
