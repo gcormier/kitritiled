@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - '**/kibot-panel.yaml'
+    tags:
+      - pcb*
   workflow_dispatch:
   workflow_call:
 
