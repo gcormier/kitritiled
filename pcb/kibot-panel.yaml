@@ -39,13 +39,13 @@ outputs:
           cuts:
             type: mousebites
             drill: 0.6mm
-            spacing: 2.5mm
+            spacing: 1mm
             offset: 0.2mm
             prolong: 0.5mm
           framing:
             type: frame
             width: 7mm
-            space: 2mm
+            space: 4mm
             fillet: 1mm
             mintotalheight: 70mm
             mintotalwidth: 70mm
