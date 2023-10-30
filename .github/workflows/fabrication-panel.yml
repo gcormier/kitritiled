@@ -1,6 +1,8 @@
 name: "Fabrication - Panel"
 on:
-
+  push:
+    paths:
+      - '**/kibot-panel.yaml'
   workflow_dispatch:
   workflow_call:
 
