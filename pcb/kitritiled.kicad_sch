@@ -1203,7 +1203,7 @@
     (property "Value" "2032" (at 24.13 34.3535 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Battery:BatteryHolder_LINX_BAT-HLD-012-SMT" (at 20.32 33.401 90)
+    (property "Footprint" "pcb:BAT_BAT-HLD-001-THM" (at 20.32 33.401 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 20.32 33.401 90)
