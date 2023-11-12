@@ -12,6 +12,12 @@ filters:
     include_only:
       - column: 'LCSC'
         regex: '^.+'
+  - name: exclude_kikit_components
+    comment: 'Exclude components with KiKit in the name'
+    type: generic
+    exclude:
+      - column: 'Name'
+        regex: '.*KiKit_.*'
 
 variants:
   - name: rotated
