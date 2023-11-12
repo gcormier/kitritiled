@@ -15,7 +15,7 @@ filters:
   - name: exclude_kikit_components
     comment: 'Exclude components with KiKit in the name'
     type: generic
-    exclude:
+    exclude_any:
       - column: 'Name'
         regex: '.*KiKit_.*'
 
