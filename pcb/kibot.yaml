@@ -8,12 +8,12 @@ filters:
     include_only:
       - column: 'LCSC'
         regex: '^.+'
-  - name: 'exclude_kikit_components'
-    comment: 'Exclude components with KiKit in the name'
+  - name: remove_extra
+    comment: 'Remove KiKit auxiliary'
     type: generic
     exclude_any:
-      - column: 'Name'
-        regex: '.*KiKit_.*'
+      - column: References
+        regex: "^KiKit_"
 
 variants:
   - name: rotated
@@ -87,6 +87,7 @@ outputs:
     comment: "Pick and place file, JLCPCB style"
     type: position
     options:
+      dnf_filter: remove_extra
       variant: rotated
       output: '%f_cpl_jlc.%x'
       format: CSV
