@@ -13,8 +13,8 @@ outputs:
       units: mm
       configs:
         - layout:
-            rows: 3
-            cols: 3
+            rows: 2
+            cols: 5
             space: 2.5mm
           tabs:
             type: fixed
@@ -23,7 +23,7 @@ outputs:
             type: mousebites
             drill: 0.6mm
             spacing: 1mm
-            offset: 0.2mm
+            offset: 0.8mm
             prolong: 0.5mm
           framing:
             type: frame
