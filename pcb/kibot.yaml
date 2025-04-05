@@ -1,37 +1,11 @@
-kibot:
-  version: 1
-
 import:
   - file: JLCPCB
-
-filters:
-  - name: remove_extra
-    comment: 'Remove KiKit auxiliary'
-    type: generic
-    exclude_any:
-      - column: References
-        regex: "^KiKit_"
-
-variants:
-  - name: rotated
-    comment: 'Just a place holder for the rotation filter'
-    type: kibom
-    variant: rotated
-    pre_transform: _rot_footprint
-
+    definitions:
+      _KIBOT_POS_ONLY_SMD: false
+      #_KIBOT_MANF_DIR: './'
+      _KIBOT_PLOT_FOOTPRINT_VALUES: true
 outputs:
   - name: PDF_Print
     comment: 'Exports the PCB to the most common exhange format. Suitable for printing.'
     type: 'pdf_sch_print'
     dir: ./
-
-
-  - name: compress_fab
-    comment: "Generates a ZIP file with all the fab outputs"
-    type: compress
-    run_by_default: false
-    options:
-      files:
-        - from_output: gerbers
-        - from_output: excellon_drill
-        - from_output: position

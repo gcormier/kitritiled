@@ -5,21 +5,6 @@ preflight:
   check_zone_fills: true
   fill_zones: true
 
-filters:
-  - name: only_jlc_parts
-    comment: 'Only parts with JLC (LCSC) code'
-    type: generic
-    include_only:
-      - column: 'LCSC'
-        regex: '^.+'
-
-variants:
-  - name: rotated
-    comment: 'Just a place holder for the rotation filter'
-    type: kibom
-    variant: rotated
-    pre_transform: _rot_footprint
-
 outputs:
   - name: 'panel'
     type: panelize
@@ -28,22 +13,20 @@ outputs:
       units: mm
       configs:
         - layout:
-            rows: 3
-            cols: 3
-            space: 2.5mm
+            rows: 2
+            cols: 2
+            vspace: 6mm
+            rotation: 180deg
+            alternation: rows
           tabs:
-            type: fixed
-            width: 5mm
+            type: full
           cuts:
-            type: mousebites
-            drill: 0.6mm
-            spacing: 1mm
-            offset: 0.2mm
-            prolong: 0.5mm
+            type: vcuts
+            layer: Edge.Cuts
           framing:
-            type: frame
-            width: 7mm
-            space: 2.5mm
+            type: railstb
+            width: 5mm
+            space: 3mm
             fillet: 1mm
             mintotalheight: 70mm
             mintotalwidth: 70mm
@@ -67,12 +50,11 @@ outputs:
             vjustify: center
           text2:
             type: simple
-            text: "{date} (<<hash>>)"
+            text: Design created on {date} - <<hash>>
             anchor: mb
             voffset: -2.5
             hjustify: center
             vjustify: center
           post:
             refillzones: true
-            millradius: 1mm
-            origin: bl
+            millradius: 0.6mm
