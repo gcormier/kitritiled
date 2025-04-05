@@ -22,7 +22,7 @@ outputs:
           cuts:
             type: mousebites
             drill: 0.6mm
-            spacing: 1mm
+            spacing: 0.5mm
             offset: 0.0mm
             prolong: 0.5mm
           framing:
