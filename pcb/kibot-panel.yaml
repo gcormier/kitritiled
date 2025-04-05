@@ -13,20 +13,22 @@ outputs:
       units: mm
       configs:
         - layout:
-            rows: 2
-            cols: 2
-            vspace: 6mm
-            rotation: 180deg
-            alternation: rows
+            rows: 3
+            cols: 3
+            space: 2.5mm
           tabs:
-            type: full
-          cuts:
-            type: vcuts
-            layer: Edge.Cuts
-          framing:
-            type: railstb
+            type: fixed
             width: 5mm
-            space: 3mm
+          cuts:
+            type: mousebites
+            drill: 0.6mm
+            spacing: 1mm
+            offset: 0.2mm
+            prolong: 0.5mm
+          framing:
+            type: frame
+            width: 7mm
+            space: 2.5mm
             fillet: 1mm
             mintotalheight: 70mm
             mintotalwidth: 70mm
@@ -50,11 +52,12 @@ outputs:
             vjustify: center
           text2:
             type: simple
-            text: Design created on {date} - <<hash>>
+            text: "{date} (<<hash>>)"
             anchor: mb
             voffset: -2.5
             hjustify: center
             vjustify: center
           post:
             refillzones: true
-            millradius: 0.6mm
+            millradius: 1mm
+            origin: bl
