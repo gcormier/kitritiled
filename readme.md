@@ -8,3 +8,16 @@ that's all I have unfortunately. `modes.h` is also changed slightly from his.
 
 ## Flashing
 I use MPLAB IPE to flash the firmware with a MPLAB PICkit 5.
+
+## Usage
+The device has 10 power levels, and starts on the brightest setting.
+
+When you first insert the battery, you have a 10 second window during which you can configure the power level.
+
+This is done by pushing the button on the device. Once you hit the lowest power level, it will start back at the highest.
+
+When you are done, leave it alone. It will blink the LED to indicate the power level. eg 1 blink for level 1, 2 blinks for level 2, etc.
+
+It will do this three times, at which point it will then lock in at that power level and the button will no longer work.
+
+If you want to change the power level, you need to remove the battery, and wait for the light to go out completely before repeating the above process.
