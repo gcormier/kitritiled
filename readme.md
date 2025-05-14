@@ -1,6 +1,10 @@
+<a href="https://www.tindie.com/stores/gcormier/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
+
 # kitritiled
 This is a copy of Ted Yapo's tritiled project from https://github.com/tedyapo/tritiled. It is based on the V3.1 design.
 I did my best to reproduce the schematic, and optimize it for automated assembly as opposed to hand-assembly. As a result, it uses some slightly different parts, such as 0402 components when possible.
+
+<img  src="image.png" width=30% />
 
 ## Firmware
 kitritiled.hex is the firmware to flash. I lost track of the changes I made to the original firmware by Ted - if you use his v30 runtime selectable, it almost works, except the button doesn't seem to trigger the interrupt. It's been a few years since I looked at it, so I pulled the firmware off one of my v1 devices and
